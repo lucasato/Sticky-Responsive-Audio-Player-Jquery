@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="HTML5 and Responsive Jquery Audio Player - Sticky and Inline versions. Download Free Jquery Plugin.">
+  <meta name="keywords" content="sticky jquery audio plugin, jquery audio player, jquery audio player for free, free jquery audio player, download jquery player plugin, music player jquery, audio player html5, html5 audio player github">
+  <meta name="author" content="Tiendasdigitales">
+
+  <title>Sticky and Inline Responsive HTML5 Audio Player with JQUERY.</title>
+	<meta property="og:image" content="http://www.tiendasdigitales.net/logo.png">
+	<meta property="og:title" content="Sticky and Inline Responsive HTML5 Audio Player with JQUERY.">
+	<meta property="og:description" content="HTML5 and Responsive Jquery Audio Player - Sticky and Inline versions. Download Free Jquery Plugin.">
+  <meta property="og:site_name" content="tiendasdigitales.net">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-58693930-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+  <link rel="stylesheet" href="css/stickyaudioplayerjquery.min.css">
+  <script src="js/stickyaudioplayerjquery.min.js"></script>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;}
+    }
+    table
+    {
+      padding: ;
+      background: #eee;
+      display: inline-block;
+      display: table-cell;
+      width: 80%;
+    }
+    table td, table th
+    {
+      padding: 10px;
+    }
+    .pluginDownload
+    {
+      padding:10px;
+      background:#f6f6f6;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      width:170px;
+      height: auto;
+      overflow: hidden;
+    }
+    .pluginDownload a,.pluginDownload span
+    {
+      display: inline-block;
+      float: left;
+    }
+    .pluginDownload a
+    {
+      color:#555;
+      text-shadow: 1px 1px 1px #fff;
+    }
+    .pluginDownload span
+    {
+      margin: 5px;
+      padding-top: 0px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>
+        <a href="http://www.tiendasdigitales.net/">
+          <img src="http://www.tiendasdigitales.net/logo.png" class="img-responsive" alt="tiendas digitales"/>
+        </a>
+      </h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="http://www.tiendasdigitales.net/">Home</a></li>
+        <li class="active"><a href="http://www.tiendasdigitales.net/development">More Resources</a></li>
+      </ul>
+    </div>
+
+    <div class="col-sm-9">
+      <h1>Sticky and Inline Responsive HTML5 Audio Player with JQUERY.</h1>
+      <h2>DEMO AND EXAMPLES</h2>
+      <p>
+        <div class="pluginDownload"><a href="stickyaudioplayerjquery.zip"><span>Download Plugin</span> <input class="primary-button" type="image" src="images/download.png" /></a></div>
+        <h3>INLINE PLAYER (Compact)</h3>
+        <div class="inline-player"></div>
+        <input type="button" onclick="inline.changeAudio('bensound-goinghigher.mp3','Bensound - Going Higher - Music: http://www.bensound.com','http://www.innerdepths.co.uk/wp-content/uploads/2014/11/happiness-100x100.jpg');" value="Play Going Higer" /></br>
+        <input type="button" onclick="inline.changeAudio('bensound-happiness.mp3','Bensound - Happiness - Music: http://www.bensound.com','images/cover.png');" value="Play Happiness" /></br>
+        <input type="button" onclick="inline.setVolume(50);" value="Set Volume 5" /></br>
+        <input type="button" onclick="inline.mute();" value="Mute" /></br>
+        <input type="button" onclick="inline.unmute();" value="Unmute" /></br>
+        <input type="button" onclick="inline.pause();" value="Pause" /></br>
+        <input type="button" onclick="inline.stop();" value="Stop" /></br>
+        <input type="button" onclick="inline.play();" value="Play" /></br>
+        <input type="button" onclick="inline.remove();" value="Remove" /></br></br></br>
+
+        <h3>STICKY PLAYER (Footer)</h3>
+        <input type="button" onclick="run.changeAudio('bensound-goinghigher.mp3','Bensound - Going Higher - Music: http://www.bensound.com','http://www.innerdepths.co.uk/wp-content/uploads/2014/11/happiness-100x100.jpg');" value="Play Going Higer" />
+        <input type="button" onclick="run.changeAudio('bensound-happiness.mp3','Bensound - Happiness - Music: http://www.bensound.com','images/cover.png');" value="Play Happiness" />
+        <input type="button" onclick="run.setVolume(50);" value="Set Volume 5" />
+        <input type="button" onclick="run.mute();" value="Mute" />
+        <input type="button" onclick="run.unmute();" value="Unmute" />
+        <input type="button" onclick="run.pause();" value="Pause" />
+        <input type="button" onclick="run.stop();" value="Stop" />
+        <input type="button" onclick="run.play();" value="Play" />
+        <input type="button" onclick="run.show();" value="Show" />
+        <input type="button" onclick="run.hide();" value="Hide" />
+        <input type="button" onclick="run.remove();" value="Remove" />
+      </p>
+      <p>
+        Basic Use:</br></br>
+        <code>
+          var player; // declare it outside to use methods after</br>
+          &nbsp;$(document).ready(function()</br>
+          &nbsp;&nbsp;{</br>
+            &nbsp;&nbsp;player = $.stickyAudioPlayer(</br>
+              &nbsp;&nbsp;&nbsp;&nbsp;{</br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;url:'http://tiendasdigitales.net/github/stickyaudioplayerjquery/bensound-goinghigher.mp3',</br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;position:'bottom', </br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text:'Bensound - Going Higher - Music: http://www.bensound.com',</br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;image:'http://tiendasdigitales.net/github/stickyaudioplayerjquery/images/cover.png',</br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;maxWidth:1000</br>
+            &nbsp;&nbsp;&nbsp; &nbsp;}</br>
+            &nbsp;&nbsp;&nbsp;);</br>
+          &nbsp;});</br>
+        </code>
+        <h4>OPTIONS</h4>
+        <table width="50%">
+          <thead>
+            <th>Parameter</th><th>Value</th>
+          </thead>
+          <tbody>
+            <tr><td>url:</td><td>['file full path'] required</td></tr>
+            <tr><td>position:</td><td>['bottom'|'inline'] default: bottom</td></tr>
+            <tr><td>text:</td><td>['any text'] default: filename</td></tr>
+            <tr><td>image:</td><td>['full path image'] default: player image</td></tr>
+            <tr><td>maxWidth:</td><td>[integer] default: 1200</td></tr>
+            <tr><td>repeat:</td><td>[true | false] default: false</td></tr>
+            <tr><td>volume:</td><td>[integer] default: 100</td></tr>
+            <tr><td>download:</td><td>['file url']</td></tr>
+            <tr><td>theme:</td><td>['default':'compact'] default: 'default'. 'compact' is used with position 'inline'</td></tr>
+          </tbody>
+        </table>
+        <h4>METHODS </h4>
+            <table width="50%">
+              <thead>
+                <th>Method</th><th>Action</th>
+              </thead>
+              <tbody>
+                <tr><td>player.changeAudio('myfile.mp3','song text','mycover.png');</td><td>play a new file into instantiated player</td></tr>
+                <tr><td>player.setVolume(100);</td><td>Change Player volume from 0 to 100</td></tr>
+                <tr><td>player.mute();</td><td>Mute audio</td></tr>
+                <tr><td>player.unmute();</td><td>Unmute Audio</td></tr>
+                <tr><td>player.pause();</td><td></td></tr>
+                <tr><td>player.stop();</td><td></td></tr>
+                <tr><td>player.play();</td><td></td></tr>
+                <tr><td>player.show();</td><td>Open Sticky Player (not valid for inline position)</td></tr>
+                <tr><td>player.hide();</td><td>Hide Sticky Player (not valid for inline position)</td></tr>
+                <tr><td>player.remove();</td><td>Remove audio player from the DOM</td></tr>
+              </tbody>
+            </table>
+
+        </br>
+        </br>
+        Include JS & CSS Files (Works with jQuery 1.3+):</br></br>
+        <code>
+          &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"><&#47;script></br>
+          &lt;link rel="stylesheet" href="css/stickyaudioplayerjquery.min.css"></br>
+          &lt;script src="js/stickyaudioplayerjquery.min.js"><&#47;script></br>
+        </code>
+        <h3>DOWNLOAD OR CLONE</h3>
+        <a href="https://github.com/lucasato/Sticky-Responsive-Audio-Player-Jquery" target="_blank">GITHUB</a> | <a href="stickyaudioplayerjquery.zip" target="_blank">COMPRESSED FILE</a>
+      </p>
+      </br></br></br></br></br></br></br></br></br>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>2017 -Tiendasdigitales.net </p>
+</footer>
+<script>
+var inline, run;
+$(document).ready(function()
+ {
+  run = $('body').stickyAudioPlayer(
+   {
+     url:       'http://tiendasdigitales.net/github/stickyaudioplayerjquery/bensound-goinghigher.mp3',
+     position:  'bottom', //'bottom'|'top'|'inline'
+     text:      'Bensound - Going Higher - Music: http://www.bensound.com',
+     image:     'http://tiendasdigitales.net/github/stickyaudioplayerjquery/images/cover.png',
+     volume:    40,
+     repeat:    false,
+    }
+  );
+
+  inline = $('.inline-player').stickyAudioPlayer(
+   {
+     url:       'http://tiendasdigitales.net/github/stickyaudioplayerjquery/bensound-happiness.mp3',
+     position:  'inline',
+     text:      'Bensound - Happiness - Music: http://www.bensound.com',
+     image:     'http://www.innerdepths.co.uk/wp-content/uploads/2014/11/happiness-100x100.jpg',
+     download:  'http://www.google.com', //download link
+     volume:    90,
+     image:     'images/cover.png',
+     theme:     'compact',
+     repeat:    true,
+    }
+  );
+
+  /*setTimeout(function(){run.hide();},3000);
+  setTimeout(function(){run.show();},5000);
+  setTimeout(function(){run.setVolume(20);},7000);
+  setTimeout(function(){run.remove();},9000);*/
+});
+</script>
+</body>
+</html>
