@@ -41,7 +41,7 @@ Include CSS And JS Files
 ```
 **METHODS**
 ```html
-player.changeAudio('myfile.mp3','song text','mycover.png');	play a new file into instantiated player
+player.changeAudio('myfile.mp3','song text','mycover.png'); Replace current song
 player.setVolume(100);	Change Player volume from 0 to 100
 player.mute();	Mute audio
 player.unmute();	Unmute Audio
